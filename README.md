@@ -138,3 +138,35 @@ Membuat aplikasi ecommerce menggunakan Django versi 5.0.3, memperingati tgl. lah
         renamed:    config/config/urls.py -> config/urls.py
         renamed:    config/config/wsgi.py -> config/wsgi.py
         renamed:    config/manage.py -> manage.py
+
+
+#### 5. Membuat aplikasi dengan nama shop di dalam folder app
+
+        # Membuat folder
+        (aftar66) λ mkdir app
+        (aftar66) λ mkdir app\shop
+
+        # Membua aplikasi
+        (aftar66) λ python manage.py startapp shop app\shop
+
+        # Struktur folder aplikasi shop
+        app
+        └───shop
+            │   admin.py
+            │   apps.py
+            │   models.py
+            │   tests.py
+            │   views.py
+            │   __init__.py
+            │
+            └───migrations
+                    __init__.py
+
+        modified:   README.md
+        new file:   app/shop/__init__.py
+        new file:   app/shop/admin.py
+        new file:   app/shop/apps.py
+        new file:   app/shop/migrations/__init__.py
+        new file:   app/shop/models.py
+        new file:   app/shop/tests.py
+        new file:   app/shop/views.py
