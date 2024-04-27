@@ -13,3 +13,6 @@ Membuat aplikasi ecommerce menggunakan Django versi 5.0.3, memperingati tgl. lah
         modified:   .gitignore
         modified:   README.md
 
+
+## 2. MEMBUAT PROYEK DAN APLIKASI DJANGO
+
