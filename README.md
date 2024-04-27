@@ -106,7 +106,7 @@ Membuat aplikasi ecommerce menggunakan Django versi 5.0.3, memperingati tgl. lah
 
         # Menjalankan development server (lokal server)
         (aftar66) λ
-        
+
         (aftar66) λ ls
         config/  README.md  venv312503/
 
@@ -127,3 +127,14 @@ Membuat aplikasi ecommerce menggunakan Django versi 5.0.3, memperingati tgl. lah
         Django version 5.0.3, using settings 'config.settings'
         Starting development server at http://127.0.0.1:8000/
         Quit the server with CTRL-BREAK.
+
+
+#### 4. Merubah struktur folder proyek
+
+        modified:   README.md
+        renamed:    config/config/__init__.py -> config/__init__.py
+        renamed:    config/config/asgi.py -> config/asgi.py
+        renamed:    config/config/settings.py -> config/settings.py
+        renamed:    config/config/urls.py -> config/urls.py
+        renamed:    config/config/wsgi.py -> config/wsgi.py
+        renamed:    config/manage.py -> manage.py
