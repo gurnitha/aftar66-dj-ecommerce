@@ -206,3 +206,37 @@ Membuat aplikasi ecommerce menggunakan Django versi 5.0.3, memperingati tgl. lah
         modified:   README.md
         modified:   app/shop/apps.py
         modified:   config/settings.py
+
+
+#### 7. Membuat dan menampilkan Hello World!
+
+        # src/app/shop/views.py
+
+        # Django and third party modules
+        from django.shortcuts import render
+        from django.http import HttpResponse
+
+        # Create your views here.
+
+        def hello_world_view(request):
+                return HttpResponse("Hello World!")
+
+
+        # src/config/urls.py
+
+        # Django modules
+        from django.contrib import admin
+        from django.urls import path
+
+        # Locals
+        from app.shop.views import hello_world_view
+
+        urlpatterns = [
+            path("admin/", admin.site.urls),
+            # app/shop/views
+            path("hello/", hello_world_view),
+        ]
+
+        modified:   README.md
+        modified:   app/shop/views.py
+        modified:   config/urls.py
