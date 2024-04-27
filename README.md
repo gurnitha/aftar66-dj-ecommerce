@@ -85,3 +85,19 @@ Membuat aplikasi ecommerce menggunakan Django versi 5.0.3, memperingati tgl. lah
          create mode 100644 config/config/urls.py
          create mode 100644 config/config/wsgi.py
          create mode 100644 config/manage.py
+
+
+#### 2. Meng-upload file proyek (lokal repositori) ke remote repositori (Github)
+
+        # Meng-upload file
+        # Langkah 1
+        (aftar66) λ git status
+        On branch main
+        Your branch is ahead of 'origin/main' by 4 commits.
+          (use "git push" to publish your local commits)
+
+        nothing to commit, working tree clean
+        
+        # Langkah 2
+        (aftar66) λ git push
+
