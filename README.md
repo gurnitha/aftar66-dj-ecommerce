@@ -97,7 +97,33 @@ Membuat aplikasi ecommerce menggunakan Django versi 5.0.3, memperingati tgl. lah
           (use "git push" to publish your local commits)
 
         nothing to commit, working tree clean
-        
+
         # Langkah 2
         (aftar66) λ git push
 
+
+#### 3. Menjalankan server kali pertama dan melaihat tampilan laman default Django di browser
+
+        # Menjalankan development server (lokal server)
+        (aftar66) λ
+        
+        (aftar66) λ ls
+        config/  README.md  venv312503/
+
+        (aftar66) λ cd config\
+
+        (aftar66) λ ls
+        config/  manage.py*
+
+        (aftar66) λ python manage.py runserver
+        Watching for file changes with StatReloader
+        Performing system checks...
+
+        System check identified no issues (0 silenced).
+
+        You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+        Run 'python manage.py migrate' to apply them.
+        April 27, 2024 - 22:39:06
+        Django version 5.0.3, using settings 'config.settings'
+        Starting development server at http://127.0.0.1:8000/
+        Quit the server with CTRL-BREAK.
