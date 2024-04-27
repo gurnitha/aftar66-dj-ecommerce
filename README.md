@@ -170,3 +170,39 @@ Membuat aplikasi ecommerce menggunakan Django versi 5.0.3, memperingati tgl. lah
         new file:   app/shop/models.py
         new file:   app/shop/tests.py
         new file:   app/shop/views.py
+
+
+#### 6. Mendaftarkan aplikasi shop pada config/settings.py
+
+        # src/app/shop/apps.py
+
+        # Django modul
+        from django.apps import AppConfig
+
+
+        class ShopConfig(AppConfig):
+            default_auto_field = "django.db.models.BigAutoField"
+            # name = "shop"
+            name = "app.shop"
+
+        # src/config/urls.py
+        ...
+        INSTALLED_APPS = [
+            "django.contrib.admin",
+            "django.contrib.auth",
+            "django.contrib.contenttypes",
+            "django.contrib.sessions",
+            "django.contrib.messages",
+            "django.contrib.staticfiles",
+
+            # Locals
+            "app.shop.apps.ShopConfig",
+        ]
+        ...
+
+        (aftar66) λ python manage.py check
+        System check identified no issues (0 silenced).
+
+        modified:   README.md
+        modified:   app/shop/apps.py
+        modified:   config/settings.py
